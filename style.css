@@ -1,0 +1,15 @@
+#searchbar{
+    display: flex;
+    background-color: orange;
+    border: greenyellow 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header{
+   text-align: right;
+   background-color: green;
+}
+#result {
+    display: flex;
+}
