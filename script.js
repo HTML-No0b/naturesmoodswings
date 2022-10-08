@@ -1,6 +1,12 @@
-var url = "http://api.openweathermap.org"
-var apiKey = "731ac8af444163b219a889c601c050eb"
-
+var url = "http://api.openweathermap.org";
+var apiKey = "731ac8af444163b219a889c601c050eb";
+var searchHistory = [];
+//create vars for DOM elements refs
+//create function to display search list
+//create function to render search hisoty
+    //create for loop to go through search history 
+        //make button for every item in search history then append to search history
+            //append buttons to search history
 function fetchWeather(location) {
     var { lat } = location;
     var { lon } = location;
