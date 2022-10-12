@@ -1,13 +1,13 @@
 var url = "http://api.openweathermap.org";
 var apiKey = "731ac8af444163b219a889c601c050eb";
 var searchHistory = [];
-const searchEl = document.createElement('div')
+const searchEl = document.createElement('search')
 //default city
 let lat = 44.954445;
 let lon = -93.091301;
-
+let city = "https://api.openweathermap.org/data/2.5/weather?lat=44.954445&lon=-93.091301&appid=731ac8af444163b219a889c601c050eb"
 //create vars for DOM elements refs
-//create function to display search list
+//create function to display search list    
 //create function to render search hisoty
     //create for loop to go through search history 
         //make button for every item in search history then append to search history
@@ -60,3 +60,7 @@ fetch(apiUrl)
     console.error(err)
 })
 };
+document.addEventListener("click",function(){
+    document.getElementById("submit").innerHTML="submitted"
+});
+fetchWeather();
