@@ -1,55 +1,23 @@
-var aKey = "731ac8af444163b219a889c601c050eb"
-
-function info() {
-    const newName = document.getElementById("cityInput")
-    const cityName = document.getElementById("")
-};
-fetch("https://api.openweathermap.org/data/2.5/forecast?q=minneapolis&units=imperial&appid=731ac8af444163b219a889c601c050eb")
-    .then(response => response.json())
-    .then(data => {
-        for (i = 0; i < 5; i++) {
-            document.getElementById("day" + (i + 1) + "min").innerHTML = "Min:" + Number(data.list[i].main.temp_min - 294.26)
-        }
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// fetch("https://api.openweathermap.org/data/2.5/forecast?q=minneapolis&units=imperial&appid=731ac8af444163b219a889c601c050eb")
+//     .then(response => response.json())
+//     .then(data => {
+//         for (i = 0; i < 5; i++) {
+//             document.getElementById("day" + (i + 1) + "min").innerHTML = "Min:" + Number(data.list[i].main.temp_min - 294.26)
+//         }
+//     });
 
 var url = "http://api.openweathermap.org";
 var apiKey = "731ac8af444163b219a889c601c050eb";
 var searchHistory = [];
-const searchEl = document.createElement('search')
+var searchForm = []
+var searchInput = []
+var today =[]
+var forcast = []
+var searchHistoryContainer=[]
 //default city
 let lat = 44.954445;
 let lon = -93.091301;
-let city = `https://api.openweathermap.org/data/2.5/weather?lat=44.954445&lon=-93.091301&appid=${aKey}`
+let city = `https://api.openweathermap.org/data/2.5/weather?lat=44.954445&lon=-93.091301&appid=${apiKey}`
 // let city = "https://api.openweathermap.org/data/2.5/weather?lat=44.954445&lon=-93.091301&appid=731ac8af444163b219a889c601c050eb"
 //create vars for DOM elements refs
 //create function to display search list    
@@ -105,7 +73,14 @@ fetch(apiUrl)
     console.error(err)
 })
 };
+function handleSearchSubmit(e){
+
+
+}
+
+
+
+
 document.addEventListener("click",function(){
     document.getElementById("submit").innerHTML.document.apiUrl.apiKey
 });
-fetchWeather();
