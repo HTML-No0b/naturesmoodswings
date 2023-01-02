@@ -22,17 +22,17 @@
             <form id='search-form' class="form">
                 <div class="form-inline form-group">
                     <div class="input-group">
-                        <input type="text" class="form-input weather-search" id="search-input"/>
-                        <div class = 'input-group-append'>
-                            <button type="submit" class = 'btn search-button' id="search-button">
+                        <input type="text" class="form-input weather-search" id="search-input" />
+                        <div class='input-group-append'>
+                            <button type="submit" class='btn search-button' id="search-button">
                                 Search
                             </button>
-                            <hr class = "hr"/>
+                            <hr class="hr" />
                         </div>
                     </div>
                 </div>
             </form>
-            <div class = "list-group" id="history">
+            <div class="list-group" id="history">
             </div>
         </aside>
         <div class="col-lg-9 pb-3">
@@ -75,9 +75,17 @@
     <section class="current" id="today"></section>
     <section class="forecast" id="forcast"></section>
     <div class="searchbar"></div> -->
-
-     <script src="./script.js"></script>
-</body> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+        integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js"
+        integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"
+        integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg=="
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
 
 
 </html>
